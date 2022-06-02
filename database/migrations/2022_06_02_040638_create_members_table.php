@@ -21,7 +21,7 @@ class CreateMembersTable extends Migration
             $table->string('password', 35)->comment('成員密碼');
             $table->string('avatar', 50)->nullable()->comment('成員頭像');
             $table->string('introduction')->nullable()->comment('成員自介');
-            $table->string('phone', 30)->commnet('成員手機號碼');
+            $table->string('phone', 30)->comment('成員手機號碼');
             $table->integer('authority')->comment('成員權限');
             $table->timestamps();
         });
