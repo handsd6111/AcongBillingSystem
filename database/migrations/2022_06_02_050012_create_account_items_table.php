@@ -19,7 +19,7 @@ class CreateAccountItemsTable extends Migration
             $table->decimal('money')->comment('收支多少金額');
             $table->string('location', 50)->nullable()->comment('收支地點');
             $table->string('image', 50)->nullable()->comment('相關照片');
-            $table->dateTime('date')->comment('收支日期');
+            $table->dateTime('in_out_date')->comment('收支日期');
             $table->timestamps();
         });
         Schema::table('account_items', function (Blueprint $table) {

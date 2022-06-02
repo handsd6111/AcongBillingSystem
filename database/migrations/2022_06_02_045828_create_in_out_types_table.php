@@ -15,7 +15,7 @@ class CreateInOutTypesTable extends Migration
     {
         Schema::create('in_out_types', function (Blueprint $table) {
             $table->id()->comment('收支類型編號');
-            $table->char('in_out_name', 2)->comment('收入還是支出');
+            $table->char('name', 2)->comment('收入還是支出');
         });
     }
 
