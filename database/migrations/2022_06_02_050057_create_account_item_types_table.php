@@ -17,7 +17,7 @@ class CreateAccountItemTypesTable extends Migration
             $table->id()->comment('紀錄分類編號');
             $table->string('name', 10)->comment('紀錄分類名稱');
             $table->string('image', 50)->comment('記錄分類圖像');
-            $table->string('description')->comment('紀錄分類備註');
+            $table->string('description')->nullable()->comment('紀錄分類備註');
             $table->timestamps();
         });
 
