@@ -33,7 +33,7 @@ class CreateAllTable extends Migration
         // 帳本群組 table
         // Schema::create('account_book_group', function (Blueprint $table) {
         //     $table->id('account_book_group_id')->comment('帳本群組編號');
-        //     $table->char('member_id', 13)->comment('成員編號');
+        //     $table->char('member_id', 14)->comment('成員編號');
         //     $table->foreign('member_id')->references('member_id')->on('member');
         //     $table->char('account_book_id', 14)->comment('帳本編號');
         //     $table->foreign('account_book_id')->references('account_book_id')->on('account_book');
@@ -46,7 +46,7 @@ class CreateAllTable extends Migration
         //     $table->string('wallet_name', 20)->comment('錢包名稱');
         //     $table->decimal('wallet_balance')->comment('錢包餘額');
         //     $table->string('wallet_description')->nullable()->comment('錢包備註');
-        //     $table->char('member_id', 13)->comment('成員編號');
+        //     $table->char('member_id', 14)->comment('成員編號');
         //     $table->foreign('member_id')->references('member_id')->on('member');
         //     $table->timestamps();
         // });

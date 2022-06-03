@@ -19,7 +19,7 @@ class CreateWalletsTable extends Migration
             $table->decimal('balance')->comment('錢包餘額');
             $table->string('description')->nullable()->comment('錢包備註');
             $table->timestamps();
-            $table->char('member_id', 13)->comment('成員編號');
+            $table->char('member_id', 14)->comment('成員編號');
         });
         Schema::table('wallets', function (Blueprint $table) {
             $table->foreign('member_id')->references('id')->on('members');
