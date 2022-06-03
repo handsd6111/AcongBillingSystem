@@ -15,10 +15,10 @@ class CreateMembersTable extends Migration
     {
         // 成員 table
         Schema::create('members', function (Blueprint $table) {
-            $table->char('id', 13)->primary()->comment('成員編號');
+            $table->char('id', 14)->primary()->comment('成員編號');
             $table->string('account', 30)->comment('成員帳號');
             $table->string('name', 30)->comment('成員姓名');
-            $table->string('password', 35)->comment('成員密碼');
+            $table->char('password', 97)->comment('成員密碼');
             $table->string('avatar', 50)->nullable()->comment('成員頭像');
             $table->string('introduction')->nullable()->comment('成員自介');
             $table->string('phone', 30)->comment('成員手機號碼');
