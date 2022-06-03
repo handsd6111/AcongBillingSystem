@@ -22,7 +22,7 @@ class CreateMembersTable extends Migration
             $table->string('avatar', 50)->nullable()->comment('成員頭像');
             $table->string('introduction')->nullable()->comment('成員自介');
             $table->string('phone', 30)->comment('成員手機號碼');
-            $table->integer('authority')->comment('成員權限');
+            $table->integer('authority')->default(1)->comment('成員權限，0:禁止、1:普通、2:管理員、3:最高管理員');
             $table->timestamps();
         });
     }
