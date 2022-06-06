@@ -15,7 +15,9 @@ class AccountBookSeeder extends Seeder
     public function run()
     {
         AccountBook::firstOrCreate([
+            'id' => 1,
             'name' => '預設帳本(不可使用)'
+            
         ]);
     }
 }
