@@ -15,30 +15,30 @@ class AccountItemTypeSeeder extends Seeder
     public function run()
     {
         $outItem = [
-            ['飲食', 'imgPath'], //imgPath是路徑
-            ['日用', ''],
-            ['交通', ''],
-            ['社交', ''],
-            ['住房物業', ''],
-            ['禮物', 'img'],
-            ['通信', ''],
-            ['服飾', ''],
-            ['娛樂', ''],
-            ['美容', ''],
-            ['醫療', ''],
-            ['稅金', ''],
-            ['教育', ''],
-            ['寶寶', ''],
-            ['寵物', ''],
-            ['旅行', ''],
-            ['轉帳', ''],
+            ['飲食', 'food.png'],
+            ['日用', 'dailyUse.png'],
+            ['交通', 'traffic.png'],
+            ['社交', 'social.png'],
+            ['住房物業', 'home.png'],
+            ['禮物', 'gift.png'],
+            ['通信', 'phone.png'],
+            ['服飾', 'clothes.png'],
+            ['娛樂', 'entertainment.png'],
+            ['美容', 'cosmetics.png'],
+            ['醫療', 'medical.png'],
+            ['稅金', 'taxes.png'],
+            ['教育', 'educate.png'],
+            ['寶寶', 'baby.png'],
+            ['寵物', 'pets.png'],
+            ['旅行', 'travel.png'],
+            ['轉帳', 'transfer.png'],
         ];
         $inItem = [
-            ['工資', 'imgPath'],
-            ['獎金', ''],
-            ['理財投資', ''],
-            ['兼職', ''],
-            ['轉帳', ''],
+            ['工資', 'salary.png'],
+            ['獎金', 'bonus.png'],
+            ['理財投資', 'invest.png'],
+            ['兼職', 'partTime.png'],
+            ['轉帳', 'transfer.png'],
         ];
         foreach ($outItem as $value) {
             AccountItemType::firstOrCreate([
