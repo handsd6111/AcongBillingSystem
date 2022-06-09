@@ -14,7 +14,7 @@ class AddRefreshTokenColumnToMembersTable extends Migration
     public function up()
     {
         Schema::table('members', function (Blueprint $table) {
-            $table->string('refresh_token', 100);
+            $table->string('refresh_token', 100)->nullable();
         });
     }
 
