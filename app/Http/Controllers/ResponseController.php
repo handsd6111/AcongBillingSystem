@@ -21,7 +21,11 @@ class ResponseController extends Controller
             $message = IStatusCode::Message[$statusCode];
         }
 
-        $result = ['data' => $data, 'statusCode' => $statusCode, 'message' => $message];
+        $result = [
+            'data' => $data,
+            'statusCode' => $statusCode,
+            'message' => $message
+        ];
         return Response(json_encode($result), $statusCode, $headers);
     }
 }
